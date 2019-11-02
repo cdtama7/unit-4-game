@@ -15,7 +15,7 @@ function gennewvalues() {
     for (var i = 0; i < numberOptions.length; i++) {
 
         // For each iteration, we will create an imageCrystal
-        var imageCrystal2 = $(".crystal-image");
+        var imageCrystal2 = $("#crystalid" +[i]);
       
         // Each imageCrystal will be given a data attribute called data-crystalValue.
         // This data attribute will be set equal to the array value.
@@ -53,6 +53,8 @@ for (var i = 0; i < numberOptions.length; i++) {
 
   // Each imageCrystal will be given a src link to the crystal image
   imageCrystal.attr("src", images[i]);
+
+  imageCrystal.attr("id","crystalid" +[i]);
 
   // Each imageCrystal will be given a data attribute called data-crystalValue.
   // This data attribute will be set equal to the array value.
