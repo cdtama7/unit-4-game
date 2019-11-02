@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Crystals Collectors! The Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Bootstrap File -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Reset CSS -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+  </head>
+
+  <body>
+    <!-- Title Above -->
+    <h1 id="game-title">CrystalsCollector!</h1>
+    <!-- Game Instructions -->
+    <div id="instructions">
+        <p>
+            <br>
+            You will be given a random number at the start of the game.
+            <br>
+            <br>
+            There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.
+            <br>
+            <br>
+            You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.
+            <br>
+            <br>
+            The value of each crystal is hidden from you until you click on it.
+            <br>
+            <br>
+            Each time when the game starts, the game will change the values of each crystal
+        </p>
+    </div>
+    <div id="container">
+    <!-- Box holding random number -->
+    <div id="randomnumber">
+        <span id="numbertoguess"></span>
+    </div>
+    <!-- Box for wins and losses -->
+    <div id="winlose">
+        <span id="winlosetext"></span>
+        <br>
+        <span id="wins"></span>
+        <br>
+        <span id="losses"></span>
+    </div>
+    </div>
+    <!-- Crystal holder -->
+    <div id="crystals">
+    </div>
+    <!-- Total Score Text -->
+    <div id="totalscoretext">Your total score is:
+    </div>
+    <!-- Score holder -->
+    <div id="userscore">
+    </div>   
+ 
+  </body>
+
+</html>

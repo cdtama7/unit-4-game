@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url("back.png");
+}
+
+#game-title {
+    background-color: orange;
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    text-align: center;
+    width: 375px;
+    height: 75px;
+    margin: 10px;
+    padding: 15px;
+    clear:both;
+}
+
+#instructions {
+    background-color: peachpuff;
+    color: green;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+    width: 525px;
+    height: 375px;
+    padding: 3px;
+    clear:both;
+}
+
+#container {
+    width: 400px;
+}
+
+#randomnumber {
+    background-color: rgb(63, 160, 63);
+    color: purple;
+    font-size: 45px;
+    font-weight: bold;
+    margin: 10px;
+    padding: 3px;
+    width: 275px;
+    height: 100px;
+    float: left;
+}
+
+#winlose {
+    background-color: skyblue;
+    margin: 10px;
+    padding: 3px;
+    width: 85px;
+    height: 100px;  
+    position: relative;
+    float: right;
+}
+
+#totalscoretext {
+    background-color: darkcyan;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 10px;
+    padding: 3px;
+    width: 275px;
+    height: 30px;
+    clear:both;
+}
+
+#userscore {
+    background-color: darkcyan;
+    color: white;
+    font-size: 45px;
+    font-weight: bold;
+    width: 275px;
+    height: 100px;
+    margin: 10px;
+    padding: 3px;
+    clear:both;
+}
