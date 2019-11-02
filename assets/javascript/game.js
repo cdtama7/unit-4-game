@@ -39,7 +39,7 @@ function reset() {
 // We begin by expanding our array to include four options.
 var numberOptions = [(Math.floor(Math.random() * (12)) + 1), (Math.floor(Math.random() * (12)) + 1), (Math.floor(Math.random() * (12)) + 1), (Math.floor(Math.random() * (12)) + 1)];
 
-var images = ["assets/images/greenchaos.png", "assets/images/purplechaos.png", "assets/images/redchaos.png", "assets/images/yellowchaos.jpg"];
+var images = ["assets/images/greenchaos.png", "assets/images/purplechaos.png", "assets/images/redchaos.png", "assets/images/whitechaos.png"];
 
 // Next we create a for loop to create crystals for every numberOption.
 for (var i = 0; i < numberOptions.length; i++) {
