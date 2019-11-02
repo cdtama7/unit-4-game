@@ -10,19 +10,36 @@ function gennewtarget() {
     targetNumber = Math.floor(Math.random() * (120 - 19 + 1)) + 19;
 }
 
+function gennewvalues() {
+    numberOptions = [(Math.floor(Math.random() * (12)) + 1), (Math.floor(Math.random() * (12)) + 1), (Math.floor(Math.random() * (12)) + 1), (Math.floor(Math.random() * (12)) + 1)];
+    for (var i = 0; i < numberOptions.length; i++) {
+
+        // For each iteration, we will create an imageCrystal
+        var imageCrystal2 = $(".crystal-image");
+      
+        // Each imageCrystal will be given a data attribute called data-crystalValue.
+        // This data attribute will be set equal to the array value.
+        imageCrystal2.attr("data-crystalvalue", numberOptions[i]);   
+      };
+}
+
 function reset() {
     gennewtarget();
+    gennewvalues();
     counter = 0;
     $("#numbertoguess").text(targetNumber);
     $("#userscore").text(counter);
     $("#wins").html("Wins: " + wins);
     $("#losses").html("Losses: " + losses);
+    
 }
 
 // Now for the hard part. Creating multiple crystals each with their own unique number value.
 
 // We begin by expanding our array to include four options.
 var numberOptions = [(Math.floor(Math.random() * (12)) + 1), (Math.floor(Math.random() * (12)) + 1), (Math.floor(Math.random() * (12)) + 1), (Math.floor(Math.random() * (12)) + 1)];
+
+var images = ["assets/images/greenchaos.png", "assets/images/purplechaos.png", "assets/images/redchaos.png", "assets/images/yellowchaos.jpg"];
 
 // Next we create a for loop to create crystals for every numberOption.
 for (var i = 0; i < numberOptions.length; i++) {
@@ -35,7 +52,7 @@ for (var i = 0; i < numberOptions.length; i++) {
   imageCrystal.addClass("crystal-image");
 
   // Each imageCrystal will be given a src link to the crystal image
-  imageCrystal.attr("src", "http://cdn.playbuzz.com/cdn/35910209-2844-45c0-b099-f4d82878d54f/00261fda-4062-4096-81fd-8cf96b9034e8.jpg");
+  imageCrystal.attr("src", images[i]);
 
   // Each imageCrystal will be given a data attribute called data-crystalValue.
   // This data attribute will be set equal to the array value.
@@ -73,5 +90,7 @@ $(".crystal-image").on("click", function() {
     losses++;
     reset();
   }
+
+  
 
 });
